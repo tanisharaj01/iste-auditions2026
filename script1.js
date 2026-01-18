@@ -3,6 +3,7 @@ function toRegisterFunc() {
   window.location.href = "registration.html";
 }
 
+
 document.addEventListener("DOMContentLoaded", () => {
 
   // ---------- MOBILE MENU ----------

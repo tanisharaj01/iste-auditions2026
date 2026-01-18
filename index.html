@@ -36,9 +36,9 @@
     </header>
 
     <section class="hero" id="home">
-      <h1>ISTE Student’s Chapter NIT Durgapur</h1>
-      <h2>WELCOME TO AUDITIONS</h2>
-      <p>Innovate, lead, and transform your ideas into real-world impact.</p>
+      <h1 class="hero-heading">ISTE Student’s Chapter NIT Durgapur</h1>
+      <h2 style="color: #ff4fd8;">WELCOME TO AUDITIONS</h2>
+      <h3>Innovate, lead, and transform your ideas into real-world impact.</h3>
       <button class="btn" onclick="toRegisterFunc()">Register Now</button>
     </section>
 
@@ -198,9 +198,24 @@
         <a href="https://www.facebook.com/istenitdgp/"><img src="images/facebook.jpg" alt="" style="height: 50px; width: auto;"></a>
         <a href="https://www.instagram.com/istenitdgp/"><img src="images/instagram.jpg" alt="" style="height: 50px; width: auto;"></a>
       </div>
-      <p>© Made with ❤️ ISTE WebD Team</p>
+      <p style="font-family: Georgia, 'Times New Roman', Times, serif;font-weight: bolder;line-height: 30px;">TANISHA : +918906014711 <BR>
+      AMAN : +918960672636</p>
     </footer>
+    
 
     <script src="script1.js"></script>
   </body>
 </html>
+
+<script>
+  const heading = document.querySelector(".decorative-heading");
+  heading.style.opacity = 0;
+  heading.style.transform = "translateY(40px)";
+
+  window.addEventListener("load", () => {
+    heading.style.transition = "all 1s ease";
+    heading.style.opacity = 1;
+    heading.style.transform = "translateY(0)";
+  });
+</script>
+
