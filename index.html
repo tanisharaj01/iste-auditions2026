@@ -34,13 +34,23 @@
         <img src="images/nitlogo.png" alt="NIT Logo" />
       </div>
     </header>
+    
+   
+
 
     <section class="hero" id="home">
       <h1 class="hero-heading">ISTE Student’s Chapter NIT Durgapur</h1>
       <h2 style="color: #ff4fd8;">WELCOME TO AUDITIONS</h2>
       <h3>Innovate, lead, and transform your ideas into real-world impact.</h3>
       <button class="btn" onclick="toRegisterFunc()">Register Now</button>
+   
     </section>
+
+        <div class="brain-rotate">
+     <img src="images/brain-map.jpg" alt="Rotating Brain">
+    </div>
+
+
 
     <section class="about " id="about">
       <h2 class="section-title">About Us</h2>
@@ -206,16 +216,4 @@
     <script src="script1.js"></script>
   </body>
 </html>
-
-<script>
-  const heading = document.querySelector(".decorative-heading");
-  heading.style.opacity = 0;
-  heading.style.transform = "translateY(40px)";
-
-  window.addEventListener("load", () => {
-    heading.style.transition = "all 1s ease";
-    heading.style.opacity = 1;
-    heading.style.transform = "translateY(0)";
-  });
-</script>
 

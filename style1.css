@@ -10,8 +10,46 @@ body {
   color: white;
   background-image: url("images/back3\,jpg.jpg");
   background-size :cover;
-background-attachment: fixed;
+  background-attachment: fixed;
 }
+.brain-rotate {
+  position: absolute;
+  right: 6%;
+  top: 55%;
+  transform: translateY(-50%);
+  width: 200px;
+  height: 0px;
+  animation: float 6s ease-in-out infinite;
+  z-index: 1;
+  margin-right: 45px;
+}
+
+.brain-rotate img {
+  width: auto;
+  height: 50vh;
+  animation: spinBrain 18s linear infinite;
+  filter: drop-shadow(0 0 25px rgba(255,79,216,0.6));
+  
+  
+}
+
+@keyframes spinBrain {
+  from { transform: rotateY(0deg); }
+  to   { transform: rotateY(180deg); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(-50%) translateY(0); }
+  50% { transform: translateY(-50%) translateY(-12px); }
+}
+@media (max-width: 768px) {
+  .brain-rotate {
+    display: none;
+  }
+}
+
+
+
 .hero-heading {
   position: relative;
   text-align: center;
@@ -136,19 +174,20 @@ background-attachment: fixed;
   padding: 90px 20px;
   height: 100vh;
   line-height: 50px;
-  margin-top: 10vh;
+  margin-top: 5vh;
 }
 
 .hero h1 {
-  font-size: 3rem;
-  text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+  font-size: 3.8rem;
+  text-shadow: 5px 8px 8px rgba(166, 115, 147, 0.4);
   overflow: hidden;
+  
 }
 
 .hero h2 {
   color: #ff4fd8;
   margin: 10px 0;
-  font-size: 2.2rem;
+  font-size: 2.8rem;
   
 }
 
@@ -395,12 +434,13 @@ section h2 {
 
   @media screen and (max-width: 768px) {
   .navbar {
-    flex-direction: column;       /* stack hamburger and nav */
-    align-items: flex-start;      /* align items to left */
-    padding: 10px 20px;
-    background-color: rgba(255, 255, 255, 0.222);
-    box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
-     backdrop-filter: blur(12px);
+    background: linear-gradient(
+      180deg,
+      rgba(20, 10, 40, 0.92),
+      rgba(35, 15, 70, 0.92)
+    );
+    border: 1px solid rgba(255, 79, 216, 0.4);
+    box-shadow: 0 15px 40px rgba(255, 79, 216, 0.25);
   }
 
   .navbar nav {
@@ -412,9 +452,16 @@ section h2 {
   }
 
   .navbar nav.active {
+    
     display: flex;
-    background: rgba(33, 22, 22, 0.1);
-    backdrop-filter: blur(10px);
+   background: linear-gradient(
+      180deg,
+      rgba(15, 5, 35, 0.95),
+      rgba(30, 10, 60, 0.95)
+    );
+    padding: 14px 0;
+    border-radius: 16px;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.6);
     border: 1px solid white;
     padding: 10px 28px;
     border-radius: 50px;
@@ -463,6 +510,7 @@ section h2 {
 
 /* Responsive */
 @media (max-width: 768px) {
+  
   .navbar nav {
     display: none;
   }
