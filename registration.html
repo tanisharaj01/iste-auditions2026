@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ISTE Student's Chapter NIT Durgapur</title>
+    <link rel="stylesheet" href="style1.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header-wrapper">
+      <!-- iste Logo -->
+      <div class="side-logo left-logo">
+        <img src="images/whiteIste.png" alt="ISE Logo" />
+      </div>
+
+      <!-- Center Navbar -->
+      <div class="navbar">
+        <div class="menu-toggle" id="mobile-menu">&#9776;</div>
+        <nav>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#domains">Domains</a>
+          <a href="#events">Events</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+
+      <!-- nit Logo -->
+      <div class="side-logo right-logo">
+        <img src="images/nitLogo.png" alt="NIT Logo" />
+      </div>
+    </header>
+
+    <section class="hero" id="home">
+      <h1>ISTE Student’s Chapter NIT Durgapur</h1>
+      <h2 class="section-title"> Registration Form</h2>
+     
+    </section>
+    <!-- Registration Form-->
+ <section class="register-container fade-in">
+  <div class="register-box">
+    <form id="registerForm" action="https://script.google.com/macros/s/AKfycbyvbXyO5ZbaY4UB6TNqxSiaJII6_9j_V9GdfidnzYJYfCcadZgLOhRWkCGVGHhzrAYu/exec" method="POST">
+
+      <div class="input-group">
+        <input type="text" name="name" required>
+        <label>Full Name</label>
+      </div>
+
+      <div class="input-group">
+        <input type="text" name="rollno" required>
+        <label>Roll Number</label>
+      </div>
+
+      <div class="input-group">
+        <input type="email" name="email" required>
+        <label>Email Address</label>
+      </div>
+
+      <div class="input-group">
+        <input type="tel" name="phone" required>
+        <label>Phone Number</label>
+      </div>
+
+      <div class="input-group">
+        <select name="domain" required>
+          <option value="" disabled selected></option>
+          <option>Web Development</option>
+          <option>Content Writing</option>
+          <option>Graphic Designing</option>
+          <option>Event Management</option>
+          <option>Video Editing</option>
+        </select>
+        <label>Preferred Domain</label>
+      </div>
+
+      <div class="input-group">
+        <select name="year" required>
+          <option value="" disabled selected></option>
+          <option>1st Year</option>
+          <option>2nd Year</option>
+        </select>
+        <label>Year of Study</label>
+      </div>
+
+      <div class="input-group">
+        <textarea name="question1" rows="3" required></textarea>
+        <label>Why do you want to join ISTE?</label>
+      </div>
+
+      <div class="input-group">
+        <textarea name="question2" rows="3" required></textarea>
+        <label>Rate your domain specific knowledge (1–10)</label>
+      </div>
+
+      <button type="submit" class="cta-btn full">SUBMIT</button>
+
+    </form>
+    <!-- Back to Home Link -->
+    <a href="index1.html" class="back-link">← Back to Home</a>
+  
+</section>
+  </div>
+
+    
+
+<div id="successBox" class="success-box">
+  ✅ Successfully Registered <br> Mark your calendars ✨<br>Auditions start from 24th January 2026
+</div>
+
+<div id="errorBox" class="error-box">Submission Failed. Please try again.</div>
+
+
+<!--contact us section-->
+     <footer class="footer" id="contact">
+      <h2 class="section-title">Contact Us</h2>
+      <div class="socials">
+        <a href="#"><img src="images/linkedin.jpg" alt="" style="height: 50px; width: auto;"></a>
+        <a href="#"><img src="images/gmail.jpg" alt="" style="height: 50px; width: auto;"></a>
+        <a href="#"><img src="images/facebook.jpg" alt="" style="height: 50px; width: auto;"></a>
+        <a href="#"><img src="images/instagram.jpg" alt="" style="height: 50px; width: auto;"></a>
+      </div>
+      <p>© Made with ❤️ ISTE WebD Team</p>
+    </footer>
+
+</body>
+</html>
+<script src="script1.js"></script>
