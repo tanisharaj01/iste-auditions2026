@@ -110,11 +110,7 @@ background-attachment: fixed;
   font-size: 16px;
   cursor: pointer;
 }
-.domain-name{
-  color:whitesmoke;
-  font-weight: bold;
-  font-family: 'Times New Roman', Times, serif;
-}
+
 
 /* Sections */
 section {
@@ -158,6 +154,11 @@ section h2 {
 }
 
 /* Domain card */
+.domain-name{
+  color:whitesmoke;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
 .domain-card {
   background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(14px);
