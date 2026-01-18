@@ -110,6 +110,11 @@ background-attachment: fixed;
   font-size: 16px;
   cursor: pointer;
 }
+.domain-name{
+  color:whitesmoke;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
 
 /* Sections */
 section {
