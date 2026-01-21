@@ -42,7 +42,7 @@ body {
   0%, 100% { transform: translateY(-50%) translateY(0); }
   50% { transform: translateY(-50%) translateY(-12px); }
 }
-@media (max-width: 768px) {
+@media (max-width:1070px) {
   .brain-rotate {
     display: none;
   }
@@ -225,6 +225,7 @@ section h2 {
   max-width: 800px;
   margin: auto;
   text-align: center;
+  line-height: 35px;
 }
 
 /* Domains */
