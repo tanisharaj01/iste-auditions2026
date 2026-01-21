@@ -227,6 +227,24 @@ section h2 {
   text-align: center;
   line-height: 35px;
 }
+.glow-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 12px 22px;
+  color: white;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+  box-shadow: 0 0 15px rgba(106, 17, 203, 0.5);
+}
+
+.glow-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 25px rgba(37, 117, 252, 0.8);
+}
+
 
 /* Domains */
 .domains-section {
