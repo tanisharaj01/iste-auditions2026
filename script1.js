@@ -6,15 +6,27 @@ function toRegisterFunc() {
 
 document.addEventListener("DOMContentLoaded", () => {
 
-  // ---------- MOBILE MENU ----------
-  const menuToggle = document.getElementById("mobile-menu");
-  const nav = document.querySelector(".navbar nav");
+ // ---------- MOBILE MENU ----------
+const menuToggle = document.getElementById("mobile-menu");
+const nav = document.querySelector(".navbar nav");
+const navLinks = document.querySelectorAll(".navbar nav a");
 
-  if (menuToggle && nav) {
-    menuToggle.addEventListener("click", () => {
-      nav.classList.toggle("active");
+if (menuToggle && nav) {
+  // Open / close menu on hamburger click
+  menuToggle.addEventListener("click", () => {
+    nav.classList.toggle("active");
+  });
+
+  // Close menu when any nav link is clicked (mobile only)
+  navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      if (window.innerWidth <= 768) {
+        nav.classList.remove("active");
+      }
     });
-  }
+  });
+}
+
 
   // ---------- SMOOTH SCROLL ----------
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
